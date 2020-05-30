@@ -46,7 +46,7 @@
                 }
                 
                 else {
-                    echo '<div class="text-sucess">
+                    echo '<div class="text-success">
                 Kullanıyorsunuz!
                 </div>';
                 } ?></h1>
