@@ -1,5 +1,5 @@
 <?php
-  $ip = file_get_contents('https://api.ipify.org');
+  $ip = $_SERVER['REMOTE_ADDR'];
   $url = "http://ip-api.com/json/".$ip;
   $content = file_get_contents($url);
   $json = json_decode($content,true);
@@ -80,7 +80,7 @@
                     <!-- Footer İkonları-->
                     <div class="social" style="text-align: center; margin:auto;">
                         <h4 class="text-uppercase mb-4">İletişim adresleri</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/ByPerPer"><i class="fab fa-github"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCEEDVWD3eb12it1aZBielhA"><i class="fab fa-youtube"></i></a><a class="btn btn-outline-light btn-social mx-1" onClick="telegramCl()"><i class="fab fa-telegram"></i></a><a class="btn btn-outline-light btn-social mx-1" onClick="discordCl()"><i class="fab fa-discord"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/ByPerPer"><i class="fab fa-github"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCEEDVWD3eb12it1aZBielhA"><i class="fab fa-youtube"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://t.me/ByPerPer"><i class="fab fa-telegram"></i></a><a class="btn btn-outline-light btn-social mx-1" onClick="discordCl()"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
             </div>
@@ -102,9 +102,6 @@
         <script src="js/scripts.js"></script>
 
         <script>
-function telegramCl() {
-  alert("Telegram adresim: @ByPerPer");
-}
 
 function discordCl() {
   alert("Discord adresim: ByPerPer#3222");
