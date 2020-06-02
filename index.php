@@ -5,7 +5,6 @@
   $json = json_decode($content,true);
 ?>
                 
-?>
 <!DOCTYPE html>
 <html>
     <head>
